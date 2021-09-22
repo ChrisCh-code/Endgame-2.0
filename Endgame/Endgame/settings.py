@@ -129,6 +129,9 @@ MEDIA_URL = '/media/'
 #MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_ROOT = BASE_DIR.joinpath(MEDIA_URL)
 
+#redirect to home page after login
+LOGIN_REDIRECT_URL = 'blog-home'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
