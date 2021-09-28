@@ -26,7 +26,7 @@ SECRET_KEY = '1lz$o&6i^*^=yh^61udzfzy#=ew4()waco+km^+z8*==%x_n31'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [endgame-v2.herokuapp.com]
 
 
 # Application definition
