@@ -4,16 +4,15 @@ from .models import Post
 from django.views.generic import ListView, DetailView,CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
+
 # Create your views here.
-
-
-
 
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html' 
     context_object_name = 'posts' # set variable for template to loop through
     ordering = ['-date_posted']
+    paginate_by = 5
     
 class PostDetailView(DetailView):
     model = Post
