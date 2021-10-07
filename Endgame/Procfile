@@ -1,1 +1,1 @@
-web: gunicorn Endgame.wsgi
+web: gunicorn Endgame.wsgi --log-file -
